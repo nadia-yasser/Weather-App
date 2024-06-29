@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Weather</title>
+    <link rel="stylesheet" href="./css/all.min.css" />
+    <link rel="stylesheet" href="./css/bootstrap.min.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body class="p-5">
+    <!-- *****Search Input***** -->
+    <nav class="d-flex justify-content-between align-items-baseline">
+      <div class="input-group mb-5 rounded-5">
+        <input
+          type="text"
+          class="input w-100 bg-transparent border-0 ps-4 py-2 text-white fs-6"
+          placeholder="Find Your Location..."
+          aria-describedby="button-addon2"
+        />
+        <button
+          class="scribe-btn fs-6 border-0 bg-transparent"
+          type="button"
+          id="button-addon2"
+        >
+          <i class="fa-solid fa-magnifying-glass text-muted"></i>
+        </button>
+      </div>
+      <div class="logo-block">
+        <a
+          class="navbar-brand d-flex justify-content-end align-items-center"
+          href="#"
+        >
+          <img src="./images/logo@2x.png" alt="" class="w-25" />
+          <div class="logo ms-3">
+            <h1 class="text-white">Weather</h1>
+            <h6>tagline goes here</h6>
+          </div>
+        </a>
+      </div>
+    </nav>
+
+    <!-- *****Display Content***** -->
+    <header class="header">
+      <div class="row d-flex align-items-center g-4">
+        <!-- Today Weather Block -->
+        <div class="col-lg-6">
+          <div class="card today-weather mb-3 border-0"></div>
+        </div>
+        <!-- Second Day Weather Block -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card second-day border-0 mb-3 pb-4"></div>
+        </div>
+        <!-- Third Day Weather Block -->
+        <div class="col-md-6 col-lg-3">
+          <div class="card third-day border-0 mb-3 pb-4"></div>
+        </div>
+      </div>
+    </header>
+
+    <!-- JS Links -->
+    <script src="./js/bootstrap.bundle.min.js"></script>
+    <script src="./js/main.js"></script>
+  </body>
+</html>

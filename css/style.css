@@ -1,0 +1,49 @@
+body {
+  background-color: #4ca2b9;
+}
+/* *****NavBar Style***** */
+nav .input-group {
+  width: 70%;
+  font-size: 14px;
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+nav .logo-block {
+  width: 30%;
+}
+nav h1 {
+  font-size: 16px;
+  font-weight: 700;
+}
+nav h6 {
+  color: #bfc1c8;
+  font-size: 10px;
+  font-weight: 300;
+}
+nav input:focus {
+  box-shadow: none;
+  outline: none;
+}
+nav .scribe-btn {
+  position: absolute;
+  top: 5px;
+  bottom: 5px;
+  right: 5px;
+}
+/* *****Card Style***** */
+header .card {
+  background-color: rgba(5, 99, 133, 0.3);
+  background: rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(4px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+}
+header .card-body .degree {
+  font-size: 60px;
+  line-height: 2;
+}
+
