@@ -162,7 +162,7 @@ searchInput.addEventListener("input", function () {
 });
 
 // *********GET LOCATION FUNCTION*********
-function getLocation() {
+(function getLocation(){
   navigator.geolocation.getCurrentPosition(async function (location) {
     let lat = location.coords.latitude;
     let long = location.coords.longitude;
@@ -172,5 +172,4 @@ function getLocation() {
     let finalData = await reqLoc.json();
     display(finalData);
   });
-}
-getLocation();
+})()
