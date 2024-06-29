@@ -56,6 +56,9 @@ input:focus {
 #navbar .show li .nav-link.active {
   color: #3d46f2;
 }
+#navbar .show li .nav-link:hover{
+  color: #3d46f2;
+}
 #navbar button.navbar-toggler {
   box-shadow: none;
 }
