@@ -146,7 +146,7 @@ function display(finalData) {
 // *********GET WEATHER FUNCTION*********
 async function getWeather(c) {
   let reqData = await fetch(
-    `http://api.weatherapi.com/v1/forecast.json?key=7c785214ae834d51b54153720242506&q=${c}&days=3`
+    `https://api.weatherapi.com/v1/forecast.json?key=7c785214ae834d51b54153720242506&q=${c}&days=3`
   );
   let finalData = await reqData.json();
   display(finalData);
@@ -162,14 +162,15 @@ searchInput.addEventListener("input", function () {
 });
 
 // *********GET LOCATION FUNCTION*********
-(function getLocation(){
+function getLocation(){
   navigator.geolocation.getCurrentPosition(async function (location) {
     let lat = location.coords.latitude;
     let long = location.coords.longitude;
     let reqLoc = await fetch(
-      `http://api.weatherapi.com/v1/forecast.json?key=7c785214ae834d51b54153720242506&q=${lat},${long}&days=3`
+      `https://api.weatherapi.com/v1/forecast.json?key=7c785214ae834d51b54153720242506&q=${lat},${long}&days=3`
     );
     let finalData = await reqLoc.json();
     display(finalData);
   });
-})()
+}
+getLocation();
